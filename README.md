@@ -18,5 +18,5 @@ If not, then update the docker-init.sh script accordingly.
 This script is not required by webMethods Microservice Runtime as it supports natively the
 environment variables JAVA_MIN_MEM and JAVA_MAX_MEM
 
-The script does NOT validate that you have configured the environment variables incorrectly and if so
+The script does NOT validate that you have configured the environment variables correctly and if so
 your container will not start properly.
