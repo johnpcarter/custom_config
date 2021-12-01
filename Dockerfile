@@ -1,7 +1,7 @@
-FROM centos:latest
+FROM <WEBMETHODS_IS_IMAGE>
 
 LABEL MAINTAINER="John Carter" \
-	DESCRIPTION="webMethods Integration Server 10.11" \
+	DESCRIPTION="webMethods Integration Server 10.x" \
 	COMMENT="POC's and what not" \
 	CUSTOM="false" \
 	SAG="true" \
@@ -14,8 +14,6 @@ ADD --chown=sagadmin configure-custom-wrapper.sh /opt/softwareag
 ADD --chown=sagadmin:sagadmin docker-init.sh ./
 ADD --chown=sagadmin:sagadmin docker-stop.sh ./
 ADD --chown=sagadmin:sagadmin docker-health-check.sh ./
-
-RUN su sagadmin -c '/software/install.sh'
 
 ENTRYPOINT ["./docker-init.sh"]
 
