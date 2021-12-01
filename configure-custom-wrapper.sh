@@ -17,7 +17,7 @@ replace_symbol_in_file() {
 	
 	p="{${file}}"
 	
-	if [ "x{text2" == "x" ]
+	if [ "x{text2}" == "x" ]
 	then
 		sed "/${symbol1}/s/.*/${symbol1}\=${text1}/" ${file} > ${file}.bk
 	else
