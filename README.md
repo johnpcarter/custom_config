@@ -7,8 +7,9 @@ be used without customisation.
 
 ### SETUP
 
-Run the Dockerfile to add the scripts to your docker image. Your base image must be a licensed
-webMethods Integration Server installed into /opt/softwareag and running under the sagadmin user
+Edit the docker file to replace the FROM image with your base image where you have installed your Integration Server.
+Then Run the Dockerfile to add the scripts to it. Your base image must be a licensed webMethods Integration Server installed 
+into /opt/softwareag and running under the sagadmin user
 
 If not, then update the docker-init.sh script accordingly.
 
