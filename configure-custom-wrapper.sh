@@ -3,7 +3,7 @@
 # Developed by John Carter (john.carter@softwareag.com) 
 # Dec 2021
 #
-# Updates custom_config.conf to update min, max memory settings
+# Updates custom_wrapper.conf to update min, max memory settings
 #
 #############################################################
 
